@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@hookform/resolvers': ^3.3.1
   '@prisma/client': ^5.1.1
   '@t3-oss/env-nextjs': ^0.6.0
   '@tanstack/react-query': ^4.32.6
@@ -24,12 +25,14 @@ specifiers:
   prisma: ^5.1.1
   react: 18.2.0
   react-dom: 18.2.0
+  react-hook-form: ^7.47.0
   superjson: ^1.13.1
   tailwindcss: ^3.3.3
   typescript: ^5.1.6
   zod: ^3.21.4
 
 dependencies:
+  '@hookform/resolvers': 3.3.1_react-hook-form@7.47.0
   '@prisma/client': 5.3.1_prisma@5.3.1
   '@t3-oss/env-nextjs': 0.6.1_v7htcrlgukgf7qsxduvbwauwy4
   '@tanstack/react-query': 4.35.7_biqbaboplfbrettd7655fr4n2y
@@ -40,6 +43,7 @@ dependencies:
   next: 13.5.3_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-hook-form: 7.47.0_react@18.2.0
   superjson: 1.13.3
   zod: 3.22.2
 
@@ -115,6 +119,14 @@ packages:
     resolution: {integrity: sha512-NCC3zz2+nvYd+Ckfh87rA47zfu2QsQpvc6k1yzTk+b9KzRj0wkGa8LSoGOXN6Zv4lRf/EIoZ80biDh9HOI+RNQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@hookform/resolvers/3.3.1_react-hook-form@7.47.0:
+    resolution: {integrity: sha512-K7KCKRKjymxIB90nHDQ7b9nli474ru99ZbqxiqDAWYsYhOsU3/4qLxW91y+1n04ic13ajjZ66L3aXbNef8PELQ==}
+    peerDependencies:
+      react-hook-form: ^7.0.0
+    dependencies:
+      react-hook-form: 7.47.0_react@18.2.0
+    dev: false
 
   /@humanwhocodes/config-array/0.11.11:
     resolution: {integrity: sha512-N2brEuAadi0CcdeMXUkhbZB84eskAc8MEX1By6qEchoVywSgXPIjou4rYsl0V3Hj0ZnuGycGCjdNgockbzeWNA==}
@@ -2379,6 +2391,15 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-hook-form/7.47.0_react@18.2.0:
+    resolution: {integrity: sha512-F/TroLjTICipmHeFlMrLtNLceO2xr1jU3CyiNla5zdwsGUGu2UOxxR4UyJgLlhMwLW/Wzp4cpJ7CPfgJIeKdSg==}
+    engines: {node: '>=12.22.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17 || ^18
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-is/16.13.1:
